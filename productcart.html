@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
+  </head>
+  <body>
+    <div id="root">
+      <header class="header">
+        <div class="grid wide">
+          <div class="row header-container">
+            <div class="col c-4 m-4 l-0">
+              <label for="sidebarMenu" class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+              </label>
+            </div>
+            <div class="col c-4 m-4 l-2">
+              <div class="header-logo">
+                <a href="/">
+                  <img src="./images/logo.jpg" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="col c-0 m-0 l-8">
+              <ul class="header-menu">
+                <li class="header-menu-item">
+                  <a href="./productlist.html"
+                    >GIẢM GIÁ
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <ul class="header-menu-lv2">
+                    <li class="header-menu-lv2-item">
+                      <a href="./productlist.html">SALE 50%</a>
+                    </li>
+                    <li class="header-menu-lv2-item">
+                      <a href="./productlist.html">MUA 2 GIẢM 30%</a>
+                    </li>
+                    <li class="header-menu-lv2-item">
+                      <a href="./productlist.html">MUA 2 GIẢM 20%</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="header-menu-item active">
+                  <a href="./productlist.html">ĐỒ ĐI LÀM</a>
+                </li>
+                <li class="header-menu-item">
+                  <a href="./productlist.html">ĐỒ ĐI TIỆC</a>
+                </li>
+                <li class="header-menu-item">
+                  <a href="./productlist.html">XU HƯỚNG</a>
+                </li>
+                <li class="header-menu-item">
+                  <a href="./productlist.html">LOOKBOOK</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col c-4 m-4 l-2">
+              <ul class="header-right">
+                <li class="header-right-item">
+                  <a href="">
+                    <i class="fa-solid fa-heart"></i>
+                    <span class="header-icon-count">2</span>
+                  </a>
+                </li>
+                <li class="header-right-item">
+                  <a href="./login.html">
+                    <i class="fa-solid fa-user"></i>
+                  </a>
+                </li>
+                <li class="header-right-item">
+                  <a href="./productcart.html">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="header-icon-count">1</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <input
+          type="checkbox"
+          hidden
+          class="checkboxSidebar"
+          id="sidebarMenu"
+        />
+        <ul class="sidebar">
+          <li class="sidebar-item">
+            <a href="./productlist.html" class="sidebar-item-btn">
+              GIẢM GIÁ
+              <i class="fa-solid fa-angle-down"></i>
+            </a>
+            <ul class="sidebar-lv2">
+              <li class="sidebar-lv2-item">
+                <a href="./productlist.html">SALE 50%</a>
+              </li>
+              <li class="sidebar-lv2-item">
+                <a href="./productlist.html">MUA 2 GIẢM 30%</a>
+              </li>
+              <li class="sidebar-lv2-item">
+                <a href="./productlist.html">MUA 2 GIẢM 20%</a>
+              </li>
+            </ul>
+          </li>
+          <li class="sidebar-item active">
+            <a href="./productlist.html">ĐỒ ĐI LÀM</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="./productlist.html">ĐỒ ĐI TIỆC</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="./productlist.html">XU HƯỚNG</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="./productlist.html">LOOKBOOK</a>
+          </li>
+        </ul>
+        <label class="overlay" for="sidebarMenu"></label>
+      </header>
+      <div class="shipping">
+        <div class="grid wide">
+          <div class="row">
+            <div class="col c-0 m-4 l-4">
+              <div class="shipping-item">
+                <i class="fa-regular fa-map"></i>
+                <span>Hệ thống cửa hàng</span>
+              </div>
+            </div>
+            <div class="col c-0 m-4 l-4">
+              <div class="shipping-item">
+                <i class="fa-solid fa-truck-fast"></i>
+                <span>Thông tin vận chuyển</span>
+              </div>
+            </div>
+            <div class="col c-0 m-4 l-4">
+              <div class="shipping-item">
+                <i class="fa-solid fa-book"></i>
+                <span>Chính sách tích điểm</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-cart">
+        <ul class="product-navigation">
+          <li class="product-navigation-item">
+            <a href="/">Trang chủ</a>
+          </li>
+          <li class="product-navigation-item">
+            <a href="/productlist.html">Giỏ hàng</a>
+          </li>
+        </ul>
+        <div class="grid wide">
+          <div class="row">
+            <div class="col c-12 m-12 l-8">
+              <div class="table">
+                <div class="table-heading">
+                  <h1>Giỏ hàng của bạn</h1>
+                  <p>1 sản phẩm trong giỏ hàng</p>
+                </div>
+                <div class="table-body">
+                  <div class="table-left">
+                    <div class="table-img">
+                      <img src="./images/product/2.1.jpeg" alt="" />
+                    </div>
+                    <div class="table-name">
+                      <h1>Áo sơ mi A phom suông, gấu cách điệu</h1>
+                      <p>755,000đ</p>
+                    </div>
+                  </div>
+                  <div class="table-right">
+                    <h1>755,000đ</h1>
+                    <select class="quantity" name="" id="">
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                      <option value="">4</option>
+                      <option value="">5</option>
+                      <option value="">6</option>
+                      <option value="">7</option>
+                      <option value="">8</option>
+                      <option value="">9</option>
+                      <option value="">10</option>
+                    </select>
+                    <button>Xóa</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col c-12 m-12 l-4">
+              <div class="detail-cart">
+                <h1>Thông tin đơn hàng</h1>
+                <div class="cart-price">
+                  <span>Tổng tiền</span>
+                  <span>755,000đ</span>
+                </div>
+              </div>
+              <ul class="product-cart-desc">
+                <li>Miễn phí vận chuyển tối đa 15K cho đơn hàng từ 499K</li>
+                <li>Đổi trả hàng trong vòng 7 ngày</li>
+              </ul>
+              <div class="product-cart-button">
+                <button>THANH TOÁN</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="grid wide">
+          <div class="row">
+            <div class="col c-12 m-6 l-3">
+              <div class="footer-item">
+                <h1>CHY CLOTHES</h1>
+                <ul>
+                  <li>
+                    <span>Giới thiệu</span>
+                  </li>
+                  <li>
+                    <span>Tin tức</span>
+                  </li>
+                  <li>
+                    <span>Hệ thống cửa hàng</span>
+                  </li>
+                  <li>
+                    <span>Thông tin tuyển dụng</span>
+                  </li>
+                  <li>
+                    <span>Liên hệ hợp tác kinh doanh</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col c-12 m-6 l-3">
+              <div class="footer-item">
+                <h1>LIÊN KẾT VỚI CHÚNG TÔI</h1>
+                <ul>
+                  <li>
+                    <i class="fa-brands fa-facebook"></i>
+                    <span>Facebook</span>
+                  </li>
+                  <li>
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>Instagram</span>
+                  </li>
+                  <li>
+                    <i class="fa-brands fa-tiktok"></i>
+                    <span>Tiktok</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>marketing@chy.com.vn</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col c-12 m-6 l-3">
+              <div class="footer-item">
+                <h1>CHĂM SÓC KHÁCH HÀNG</h1>
+                <ul>
+                  <li>
+                    <span>Chính sách vận chuyển</span>
+                  </li>
+                  <li>
+                    <span>Chính sách tích điểm</span>
+                  </li>
+                  <li>
+                    <span>Chính sách đổi trả hàng </span>
+                  </li>
+                  <li>
+                    <span>Chế độ bảo hành trọn đời</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col c-12 m-6 l-3">
+              <div class="footer-item">
+                <h1>VĂN PHÒNG CÔNG TY</h1>
+                <p>
+                  Địa chỉ: 72 Trần Đăng Ninh Dịch Vọng Cầu Giấy , Hanoi, Vietnam
+                </p>
+                <iframe
+                  class="maps"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.860808875876!2d105.7915071750317!3d21.03825468061349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab3829364ab7%3A0x3034d069a38bef5b!2zVOG7lSBo4bujcCBuaMOgIMSRYSBuxINuZywgNzIgVHLhuqduIMSQxINuZyBOaW5oLCBE4buLY2ggVuG7jW5nLCBD4bqndSBHaeG6pXksIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1714622154104!5m2!1svi!2s"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Owl Carousel Js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./javascript.js"></script>
+    <script>
+      const dropMenu = document.querySelectorAll(".sidebar-lv2");
+      const dropBtn = document.querySelectorAll(".sidebar-item-btn");
+      const icon = document.querySelectorAll(".sidebar-icon");
+      dropBtn.forEach(function (btn, i) {
+        dropBtn[i].addEventListener("click", () => {
+          dropMenu[i].classList.toggle("active");
+          icon[i].classList.toggle("fa-rotate-90");
+        });
+      });
+    </script>
+  </body>
+</html>
